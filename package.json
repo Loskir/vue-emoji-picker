@@ -1,7 +1,7 @@
 {
   "name": "@loskir/emoji-picker",
   "description": "",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "repository": {
     "type": "git",
