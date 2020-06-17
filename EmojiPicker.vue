@@ -249,7 +249,7 @@
   .emoji-picker
     overflow-y: scroll
     padding: 10px 15px
-    width 293px
+    width 261px
     height: 20rem
 
     border: 1px solid #ebeef5
