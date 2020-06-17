@@ -234,8 +234,8 @@
 </script>
 
 <style scoped lang="stylus">
-  @import "@loskir/emoji-sprite-stylesheet/emoji.css"
-  @import "@loskir/emoji-sprite-stylesheet/emoji0.css"
+  @import "~@loskir/emoji-sprite-stylesheet/emoji.css"
+  @import "~@loskir/emoji-sprite-stylesheet/emoji0.css"
 
   .emoji-picker-wrapper
     position: absolute
