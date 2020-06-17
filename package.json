@@ -1,18 +1,18 @@
 {
-  "name": "@loskir/emoji-picker",
+  "name": "@loskir/vue-emoji-picker",
   "description": "",
   "version": "1.0.3",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/loskir/emoji-picker.git"
+    "url": "git+https://github.com/loskir/vue-emoji-picker.git"
   },
   "author": "Loskir",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/loskir/emoji-picker/issues"
+    "url": "https://github.com/loskir/vue-emoji-picker/issues"
   },
-  "homepage": "https://github.com/loskir/emoji-picker#readme",
+  "homepage": "https://github.com/loskir/vue-emoji-picker#readme",
   "dependencies": {
     "@loskir/emoji-sprite-stylesheet": "^1.0.0",
     "intersection-observer": "^0.10.0",

@@ -1,2 +1,2 @@
-# @Loskir/emoji-picker
+# @Loskir/vue-emoji-picker
 
