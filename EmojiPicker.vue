@@ -262,7 +262,6 @@
       margin-top 0
 
     h5
-      font-family 'Google Sans'
       margin 0
       padding 5px 0
       color #999999
