@@ -1,7 +1,7 @@
 {
   "name": "@loskir/emoji-picker",
   "description": "",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -15,6 +15,7 @@
   "homepage": "https://github.com/loskir/emoji-picker#readme",
   "dependencies": {
     "intersection-observer": "^0.10.0",
+    "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
     "vue": "^2.6.11",
     "vue-observe-visibility": "^0.4.6"
