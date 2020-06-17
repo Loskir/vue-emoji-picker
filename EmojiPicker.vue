@@ -69,16 +69,16 @@
   import {emojiGetName} from './mixins'
 
   import 'intersection-observer' // polyfill
-  import Vue from 'vue'
   import {ObserveVisibility} from 'vue-observe-visibility'
-
-  Vue.directive('observe-visibility', ObserveVisibility)
 
   export default {
     name: 'EmojiPicker',
     mixins: [
       emojiGetName,
     ],
+    directives: {
+      'observe-visibility': ObserveVisibility,
+    },
     props: {
       left: {
         type: Number,
