@@ -25,7 +25,7 @@
                   class="emoji-wrapper"
                   v-for="{emoji, emojiName, charsName} in item.row"
                   :key="emojiName"
-                  @click="handleEmoji({emoji, emojiName})"
+                  @click="handleEmoji({emoji, emojiName, charsName})"
                   :title="emojiName">
                   <img
                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQYV2NgAAIAAAUAAarVyFEAAAAASUVORK5CYII="
@@ -95,22 +95,22 @@
       }
     },
     methods: {
-      handleEmoji({emoji, emojiName}) {
+      handleEmoji(emojiData) {
         if (!this.favourites) {
           this.favourites = []
         }
-        const fav = this.favourites.find(v => v.emoji === emoji)
+        const fav = this.favourites.find(v => v.emoji === emojiData.emoji)
         if (!fav) {
           this.favourites.push({
-            emoji,
-            emojiName,
+            emoji: emojiData.emoji,
+            emojiName: emojiData.emojiName,
             count: 1,
           })
         } else {
           fav.count++
         }
 
-        this.$emit('emoji', emoji)
+        this.$emit('emoji', emojiData)
       },
       getBoundingClientRect() {
         return this.$refs.picker.getBoundingClientRect()
