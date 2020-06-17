@@ -222,7 +222,7 @@
       } catch (error) {
         console.verbose('Unable to parse favourites from local storage')
       }
-      if (this.favourites) {
+      if (!this.favourites) {
         this.favourites = []
       }
     },
