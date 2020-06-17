@@ -19,4 +19,4 @@ npm i --save @loskir/vue-emoji-picker
 - Fast. Instant wakeup.
 - Efficient. Uses intersection observer to render only emojis that are visible
 - Uses Apple emojis via [@loskir/emoji-sprite-stylesheet](https://npmjs.com/package/@loskir/emoji-sprite-stylesheet)
-- Saves most used emojis in local storage
+- Saves favourite emojis in local storage
