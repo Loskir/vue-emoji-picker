@@ -39,27 +39,6 @@
           </template>
         </template>
       </div>
-      <!--<div
-        v-for="(emojiGroup, category) in emojis"
-        :key="category"
-        class="category">
-        <h5>{{ category }}</h5>
-        <div class="emojis">
-        <span
-          class="emoji-wrapper"
-          v-for="(emoji, emojiName) in emojiGroup"
-          :key="emojiName"
-          @click="handleEmoji({emoji, emojiName})"
-          :title="emojiName">
-          <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQYV2NgAAIAAAUAAarVyFEAAAAASUVORK5CYII="
-            class="emoji"
-            :data-name="emojiGetName(emoji)"
-            :data-emoji="emoji"
-            :alt="emoji">
-          </span>
-        </div>
-      </div>-->
     </div>
   </transition>
 </template>
