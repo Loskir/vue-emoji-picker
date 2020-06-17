@@ -304,6 +304,9 @@
           background #ececec
           cursor pointer
 
+        width 20px
+        height 20px
+
         .emoji
           --emoji-size 20px
 </style>
