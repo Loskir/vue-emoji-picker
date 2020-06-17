@@ -96,6 +96,9 @@
     },
     methods: {
       handleEmoji({emoji, emojiName}) {
+        if (!this.favourites) {
+          this.favourites = []
+        }
         const fav = this.favourites.find(v => v.emoji === emoji)
         if (!fav) {
           this.favourites.push({
@@ -122,7 +125,7 @@
     },
     computed: {
       emojis() {
-        const favourites = this.favourites
+        const favourites = (this.favourites || [])
           .slice()
           .sort((a, b) => a.count <= b.count ? 1 : -1)
           .slice(0, 8)
@@ -203,13 +206,25 @@
     watch: {
       favourites: {
         handler(v) {
-          this.$ls.set('favourites', v)
+          localStorage.setItem('emoji-picker__favourites', JSON.stringify(v))
         },
         deep: true,
       },
     },
     mounted() {
-      this.favourites = this.$ls.get('favourites', [])
+      const lsData = localStorage.getItem('emoji-picker__favourites')
+      if (!lsData) {
+        this.favourites = []
+        return
+      }
+      try {
+        this.favourites = JSON.parse(lsData)
+      } catch (error) {
+        console.verbose('Unable to parse favourites from local storage')
+      }
+      if (this.favourites) {
+        this.favourites = []
+      }
     },
     inject: [
       'emojiPicker_setHideTimeout',
